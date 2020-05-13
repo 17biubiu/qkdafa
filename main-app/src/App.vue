@@ -33,6 +33,16 @@ export default {
           key: 'VueMicroAppList',
           title: 'Vue 列表页',
           path: '/vue/list'
+        },
+        {
+          key: 'ReactMicroApp',
+          title: 'React主页',
+          path: '/react'
+        },
+        {
+          key: 'ReactMicroAppList',
+          title: 'React 列表页',
+          path: '/react/list'
         }
       ]
     }
