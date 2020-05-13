@@ -1,0 +1,22 @@
+{
+  "name": "qkdafa",
+  "version": "1.0.0",
+  "description": "qiankun、微前端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17biubiu/qkdafa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/17biubiu/qkdafa/issues"
+  },
+  "homepage": "https://github.com/17biubiu/qkdafa#readme",
+  "dependencies": {
+    "qiankun": "^2.0.11"
+  }
+}
