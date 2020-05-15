@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 import './public-path'
 /* eslint-disable no-unused-vars */
 import { runDefaultMountEffects } from 'qiankun'
+import actions from './shared/actions'
 
 Vue.use(Antd)
 Vue.use(VueRouter)
@@ -21,11 +22,15 @@ let router = null
  * 两种情况：主应用生命周期钩子中运行 / 微应用单独启动时运行
  */
 
-function render () {
+function render (props) {
+  if (props) {
+    // 注入actions实例
+    actions.setActions(props)
+  }
   // 在 render 中创建 VueRouter，可以保证在卸载微应用时，移除 location 事件监听，防止事件污染
   router = new VueRouter({
     // 运行在主应用中时，添加路由命名空间 /vue
-    base: window.__POWERED_BY_QIANKUN__ ? 'vue' : '/',
+    base: window.__POWERED_BY_QIANKUN__ ? '/vue' : '/',
     mode: 'history',
     routes
   })

@@ -43,6 +43,16 @@ export default {
           key: 'ReactMicroAppList',
           title: 'React 列表页',
           path: '/react/list'
+        },
+        {
+          key: 'MainCommunication',
+          title: '主应用通讯页',
+          path: '/communication'
+        },
+        {
+          key: 'VueCommunication',
+          title: 'Vue 通讯页',
+          path: '/vue/communication'
         }
       ]
     }
